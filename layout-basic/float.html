@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>浮动布局</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+    <style>
+        .container{
+            background:red;
+            width:400px;
+            margin:20px;
+        }
+        .p1{
+            background:green;
+            float:left;
+            width:200px;
+            height:50px;
+        }
+        .container2:after{
+          content: '';
+          clear: both;
+          display: block;
+          height: 0px;
+          visibility: hidden;
+        }
+        /*三栏布局*/
+        .floatlayout{
+          width: 800px;
+          height: 800px;
+          background: red;
+          overflow: inherit;
+        }
+        .floatlayout .left{
+            float:left;
+          width:200px;
+          height: 100%;
+          background: yellow;
+        }
+        .floatlayout .right{
+          float:right;
+          width: 200px;
+          height: 100%;
+          background: blue;
+        }
+        .floatlayout .middle{
+          height: 100%;
+          margin: 0px 200px 0px 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="p1">
+            float
+        </span>
+        <div class="p2">
+            很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字很长的文字
+        </div>
+    </div>
+
+    <div class="container container2" >
+        <span>写几个字</span>
+        <span class="p1">
+            float
+        </span>
+        <span class="p1">
+            float
+        </span>
+    </div>
+    <div class="container" style="height:200px;background:blue;">
+    </div>
+
+    <div class="floatlayout">
+      <div class="left"></div>
+        <div class="right"></div>
+      <div class="middle"></div>
+    </div>
+</body>
+</html>

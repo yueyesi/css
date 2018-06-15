@@ -1,0 +1,84 @@
+/*表格布局*/
+.table-layout table{
+  /* border-collapse: collapse; */
+  border-spacing: 10px;
+}
+.table-layout table tr td{
+  width: 200px;
+  height: 200px;
+  background: red;
+  color:white;
+  line-height: 200px;
+  text-align: center;
+}
+
+.table-layout .table{
+  display: table;
+}
+.table-layout .table .tr{
+  display: table-row;
+
+}
+.table-layout .table .tr .td{
+  display: table-cell;
+  width: 200px;
+  height: 200px;
+  background: red;
+  color:white;
+  line-height: 200px;
+  text-align: center;
+}
+
+/*flexbox*/
+.container{
+  display: flex;
+  width: 800px;
+  height: 300px;
+  background: red;
+}
+.container>div{
+  flex: 1;
+  line-height: 300px;
+  text-align: center;
+}
+.container>div:nth-child(1){
+  width: 400px;
+  flex:none;
+  background: blue;
+}
+/*float布局*/
+.float-container{
+  display: inline-block;
+  width: 500px;
+  height: 500px;
+  background: white;
+  border:1px solid black;
+
+}
+.float-container .float{
+ float:left;
+ width: 200px;
+ height: 200px;
+ background: blue;
+ color:white;
+}
+/*float三栏布局*/
+.floatlayout{
+  width: 800px;
+  height: 800px;
+  background: red;
+  overflow: auto;
+}
+.floatlayout .left{
+  width:200px;
+  float:left;
+  background: yellow;
+}
+.floatlayout .right{
+  width: 200px;
+  float:right;
+  background: blue;
+}
+.floatlayout .middle{
+  margin: 0px 200px 0px 200px;
+}
